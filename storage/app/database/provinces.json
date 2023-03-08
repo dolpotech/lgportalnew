@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "province_no": null,
+        "name": null,
+        "name_en": "Province No.1",
+        "description": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 2,
+        "province_no": null,
+        "name": null,
+        "name_en": "Province No.2",
+        "description": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 3,
+        "province_no": null,
+        "name": null,
+        "name_en": "Bagmati Region",
+        "description": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 4,
+        "province_no": null,
+        "name": null,
+        "name_en": "Gandaki Pradesh",
+        "description": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 5,
+        "province_no": null,
+        "name": "\u092a\u094d\u0930\u0926\u0947\u0936 \u096b",
+        "name_en": "Lumbini Pradesh",
+        "description": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 6,
+        "province_no": null,
+        "name": null,
+        "name_en": "Karnali Pradesh",
+        "description": null,
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": 7,
+        "province_no": null,
+        "name": null,
+        "name_en": "Far Western Region",
+        "description": null,
+        "created_at": null,
+        "updated_at": null
+    }
+]
