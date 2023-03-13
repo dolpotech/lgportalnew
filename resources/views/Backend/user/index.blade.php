@@ -53,7 +53,8 @@
                             @foreach($users as $user)
                                 <tr>
                                     <td>{{$loop->iteration}}</td>
-                                    <td>{{$user->roles[0]->name}}</td>
+                                    <td>@isset($user->roles[0]){{$user->roles[0]->name}}@else no role assigned @endisset</td>
+                                    {{-- <td>{{$user->roles[0]->name}}</td> --}}
                                     <td>{{$user->type}}</td>
                                     <td>
                                         @if(isset($user->local_government))
@@ -68,10 +69,14 @@
                                     <td>{{$user->address}}</td>
                                     <td>{{$user->status}}</td>
                                     <td>
-                                        <a href="/users/edit/{{$user->id}}" style="margin-right: 10px">
+                                        {{-- <a href="{{route("editUser", ['id' => $user->id])}}" style="margin-right: 10px"> --}}
+                                        <a href="{{route("editUser", $user)}}" style="margin-right: 10px">
+                                        
+                                            {{-- <a href="/users/edit/{{$user->id}}" style="margin-right: 10px"> --}}
                                             <i class="fa fa-edit"></i>
                                         </a>
-                                        <a href="/users/delete/{{$user->id}}">
+                                        <a href="{{route("deleteUser", $user)}}" style="margin-right: 10px">
+                                        {{-- <a href="/users/delete/{{$user->id}}"> --}}
                                             <i class="fa fa-trash"></i>
                                         </a>
                                     </td>
