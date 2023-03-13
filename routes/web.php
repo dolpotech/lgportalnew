@@ -37,7 +37,7 @@ Auth::routes();
 Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard');
 
 Route::group(['middleware' => 'role:super_admin'], function () {
-    Route::group(['prefix'=>'templates'], function(){
+    Route::group(['prefix' => 'templates'], function () {
         Route::get('/index', [TemplateController::class, 'index'])->name('getAllTemplates');
         Route::get('/create', [TemplateController::class, 'createTemplate'])->name('createTemplates');
         Route::post('/store', [TemplateController::class, 'storeTemplate'])->name('storeTemplates');
@@ -47,7 +47,7 @@ Route::group(['middleware' => 'role:super_admin'], function () {
         Route::post('/add-template-field', [TemplateController::class, 'addTemplateField'])->name('addTemplateField');
         Route::post('/delete/{id}', [TemplateController::class, 'deleteTemplateField'])->name('deleteTemplateField');
     });
-    Route::group(['prefix' => 'users'], function (){
+    Route::group(['prefix' => 'users'], function () {
         Route::get('/index', [UserController::class, 'index'])->name('getAllUsers');
         Route::get('/getRoles', [UserController::class, 'getRoles'])->name('getRoles');
         Route::get('/getLgRoles', [UserController::class, 'getLgRoles'])->name('getLgRoles');
