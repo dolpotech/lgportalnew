@@ -33,7 +33,6 @@ Route::get('/sliderdata', [LGController::class, 'getsliderdata']);
 //});
 
 Auth::routes();
-
 Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard');
 
 Route::group(['middleware' => 'role:super_admin'], function () {
